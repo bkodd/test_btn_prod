@@ -7,7 +7,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<button data-eyezon="60a7beeb32ab1a156d5064e3" data-eyezon-target="Test_prod" data-eyezon-title="Test_prod" data-eyezon-product-url="https://google.com/" data-eyezon-shop-ids="["test-test"]" data-eyezon-put-in-cart>Посмотреть вживую</button>
+	<button data-eyezon="60a7beeb32ab1a156d5064e3" data-eyezon-target="Test_prod" data-eyezon-title="Test_prod" data-eyezon-product-url="https://google.com/" data-eyezon-shop-ids="["test-test"]" data-eyezon-streamer-ids="[&quot;streamer1&quot;]" data-eyezon-second-shop-ids="[&quot;shop1&quot;]" data-eyezon-put-in-cart>Посмотреть вживую</button>
 
 	<script>
 
@@ -25,7 +25,8 @@
 			businessId: '60a25d2624635039c8d037bd',
 			region: 'ru-1',
 			logging: true,
-			resetRoutingAfterSeconds: 60
+			secondRoutingAfterSeconds: 20,
+        		resetRoutingAfterSeconds: 40,
 		});
 		
 		eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
